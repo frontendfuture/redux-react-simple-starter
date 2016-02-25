@@ -4,7 +4,7 @@ import { Router } from 'react-router'
 
 class Root extends Component{
 
-    get content(){
+    content(){
         return (
             <Router history={this.props.history}>
                 {this.props.routes}
@@ -18,7 +18,7 @@ class Root extends Component{
             <div>
                 <Provider store={this.props.store}>
                     <div>
-                        {this.content}
+                        {this.content()}
                     </div>
                 </Provider>
             </div>
