@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import counter from './reducers/counter'
 import {routeReducer as routing} from 'react-router-redux'
+import user from './reducers/user'
 
-let rootReducer = combineReducers({counter, routing: routing})
+let rootReducer = combineReducers({user, routing: routing})
 
 export default rootReducer
