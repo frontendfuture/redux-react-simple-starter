@@ -27,7 +27,7 @@ HomeView.propTypes = {
 }
 
 HomeView.defaultProps = {
-    user : {}
+    currentUser : {}
 }
 
 HomeView.state = {
