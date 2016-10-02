@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/codefloat/redux-react-starterpack",
   "dependencies": {
+    "css-loader": "^0.25.0",
     "history": "^2.0.0",
     "jquery": "^2.2.1",
     "key-mirror": "^1.0.1",
@@ -36,9 +37,11 @@
     "react-redux": "^4.0.6",
     "react-router": "^2.0.0",
     "react-router-redux": "^4.0.0",
+    "react-spinkit": "^1.1.11",
     "redux": "^3.0.5",
     "redux-simple-router": "^1.0.2",
-    "redux-thunk": "^1.0.3"
+    "redux-thunk": "^1.0.3",
+    "style-loader": "^0.13.1"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",

@@ -24,6 +24,10 @@ module.exports = {
                 test: /\.js$/ ,
                 exclude: /node_modules/,
                 loaders: ['react-hot','babel?presets[]=es2015,presets[]=react,presets[]=stage-0,plugins[]=transform-decorators-legacy']
+            },
+            {
+              test: /\.css$/,
+              loader: 'style!css'
             }
         ]
     }

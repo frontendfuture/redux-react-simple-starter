@@ -1,12 +1,7 @@
 import React, {PropTypes} from 'react';
 import { observable } from 'mobx'
 import { observer } from 'mobx-react'
-
-let time = observable(1)
-
-setInterval(function(){
-  time++
-}, 1000)
+import AppState from '../../AppState'
 
 @observer
 export default class DashboardIndex extends React.Component {
@@ -14,8 +9,16 @@ export default class DashboardIndex extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    AuthService.getCurrentUser()
+  }
+
   render() {
-    return (<div>MyComponent</div>);
+    return <GC.Loading/>
+
+    return (<div>
+      {AppState.user!= null ? 'Logged in': 'not logged in'}
+    </div>);
   }
 }
 

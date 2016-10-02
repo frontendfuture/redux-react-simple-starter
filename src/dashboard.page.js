@@ -1,12 +1,17 @@
-import configureStore from './redux/configureStore'
 import {Provider} from 'react-redux'
 import Root from './containers/Root'
 import React, { Component } from 'react'
 import {render} from 'react-dom'
-import { syncReduxAndRouter } from 'react-router-redux'
 import {hashHistory} from 'react-router'
 import { Route, IndexRoute } from 'react-router'
+import * as AuthService from './services/AuthService'
+import config from './app.config'
+import * as GC from './GeneralComponent'
 
+
+window.AuthService = AuthService
+window.config = config
+window.GC = GC
 
 let rootElement = document.getElementById('render')
 
