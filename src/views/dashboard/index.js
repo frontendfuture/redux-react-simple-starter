@@ -11,13 +11,17 @@ export default class DashboardIndex extends React.Component {
 
   componentWillMount() {
     AuthService.getCurrentUser()
+    GC.Swal({
+      title: 'Test',
+      type: 'success'
+    })
   }
 
   render() {
-    return <GC.Loading/>
+    if(AppState.user == null) return <GC.Loading/>
 
     return (<div>
-      {AppState.user!= null ? 'Logged in': 'not logged in'}
+      {AppState.user!= null ? AppState.user.email: 'not logged in'}
     </div>);
   }
 }

@@ -7,7 +7,7 @@ export default class Loading extends React.Component {
   }
 
   render() {
-    return (<div>
+    return (<div style={{textAlign: 'center'}}>
       <Spinner spinnerName="three-bounce" noFadeIn/>
     </div>);
   }
