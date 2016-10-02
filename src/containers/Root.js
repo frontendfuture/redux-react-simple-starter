@@ -16,11 +16,9 @@ class Root extends Component{
         console.warn(this.props)
         return (
             <div>
-                <Provider store={this.props.store}>
-                    <div>
-                        {this.content()}
-                    </div>
-                </Provider>
+              <div>
+                  {this.content()}
+              </div>
             </div>
         )
     }
@@ -30,7 +28,6 @@ class Root extends Component{
 Root.propTypes = {
     history: React.PropTypes.object.isRequired,
     routes: React.PropTypes.element.isRequired,
-    store: React.PropTypes.object.isRequired
 }
 
 export default Root

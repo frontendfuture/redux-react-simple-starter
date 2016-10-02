@@ -11,4 +11,4 @@ let store = configureStore()
 let rootElement = document.getElementById('render')
 
 
-render(<Root store={store} routes={routes} history={hashHistory} />, rootElement)
+render(<Root routes={routes} history={hashHistory} />, rootElement)
