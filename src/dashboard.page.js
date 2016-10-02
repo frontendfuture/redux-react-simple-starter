@@ -6,7 +6,7 @@ import {hashHistory} from 'react-router'
 import { Route, IndexRoute } from 'react-router'
 import * as AuthService from './services/AuthService'
 import config from './app.config'
-import * as GC from './GeneralComponent'
+import * as GC from './components/GeneralComponent'
 
 
 window.AuthService = AuthService
